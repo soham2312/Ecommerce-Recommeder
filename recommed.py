@@ -14,7 +14,6 @@ app.config['CORS_HEADERS'] = 'Content-Type'
    
 @app.route('/predict', methods=['POST'])
 def predict():
-    print("fuck")
     data = request.get_json(force=True)
     data=data['products']
     # print(data)
